@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ce61890864.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Transparent Login Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <div class="box">
+            <i class="fa fa-user"></i>
+            <input type="username" name="username" placeholder="Enter username">
+        </div>
+        <div class="box">
+            <i class="fa fa-key"></i>
+            <input type="password" name="password" placeholder="Enter your password">
+        </div>
+        <button class="btn">Sign In</button>
+    </div>
+    <script>
+        function login() {
+            var username = document.getElementsByName('username')[0].value;
+            var password = document.getElementsByName('password')[0].value;
+
+            if (username === "admin" && password === "password") {
+                alert("Login successful");
+                // Redirect to another page or perform any other action
+            } else {
+                alert("Incorrect username or password");
+            }
+        }
+    </script>
+</body>
+
+</html>
